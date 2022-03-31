@@ -1,6 +1,7 @@
+
 @font-face {
-    font-family: Market, Arial, Helvetica, sans-serif;
-    src: url(font/Market_Deco.ttf);
+    font-family: Fiesta, Arial, Helvetica, sans-serif;
+    src: url(font/Fiesta.ttf);
 }
 
 @font-face {
@@ -9,16 +10,18 @@
 }
 
 html{
-    margin: 0;
-    background-color: #ffb14d;
+    padding: 0;
+    background-color: #FDFFFC;
     font-size: 14px;
     width: 100%;
 }
 
+/* Titre + nav */
 h1{
     text-align: center;
     font-size: 2em;
-    font-family: Market;
+    font-family: Fiesta;
+    color: #FFAD05;
 }
 
 .nugget{
@@ -34,11 +37,12 @@ nav
     background: #0F0A0A;
 }
 
-nav .menu 
+.menu 
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top:  5px solid #A5402D;
 }
 
 nav .menu a 
@@ -49,20 +53,61 @@ nav .menu a
     justify-content: center;
     height: 100px;
     text-decoration: none;
+    font-size: 1.2em;
     font-family: Market, Arial, sans-serif;
-    color: #F5EFED;
+    color: #FFAD05;
 }
 
 nav a:hover{
-    background: #FFAD05;
+    background: #A5402D;
 }
 
 label
 {
     display: none;
 }
- 
-@media all and (max-width: 991px)
+
+label, #toggle
+{
+    display: none;
+}
+
+main{
+    color: #0F0A0A;
+    font-family: Fiesta;
+}       
+
+#main-pic{
+    width: 98vw;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer li{
+      margin: 10px;
+}
+
+footer img{
+    width: 20px;
+}
+
+#copy{
+    text-align: center;
+    font-size: 0.7em;
+}
+
+@media all and (max-width: 527px)
 {
     nav
     {
@@ -86,30 +131,29 @@ label
         cursor: pointer;
     }
 }
-
-label, #toggle
-{
-    display: none;
-}
  
-@media all and (max-width: 991px)
+@media all and (max-width: 527px)
 {
     nav
     {
         height: 60px;
+        border-top:  5px solid #A5402D;
     }
  
-    nav .menu 
+    .menu 
     {
         display: none;
         flex-direction: column;
-        background: rgba(245, 239, 237, 0.2);
-        height: 220px;
+        background: #0F0A0A;
+        height: 240px;
         margin-top: 10px;
     }
- 
+    
     nav .menu a {
         width: 50%;
+        font-family: Fiesta;
+        font-weight: bolder;
+        font-size: 1.5em;
     }
  
     label{
@@ -121,8 +165,10 @@ label, #toggle
         font-size: 40px;
         color: white;
         cursor: pointer;
+        
     }
- 
+    
     #toggle:checked + .menu{
         display: flex;
     }
+}

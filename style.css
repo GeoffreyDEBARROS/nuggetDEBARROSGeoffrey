@@ -1,12 +1,12 @@
 
 @font-face {
-    font-family: Fiesta, Arial, Helvetica, sans-serif;
-    src: url(font/Fiesta.ttf);
+    font-family: Vintages, Arial, Helvetica, sans-serif;
+    src: url(font/Vintages.ttf);
 }
 
 @font-face {
-    font-family: Vintages, Arial, Helvetica, sans-serif;
-    src: url(font/Vintages.ttf);
+    font-family: Typo, arial, Helvetica, sans-serif;
+    src: url(font/TypoGraphica_demo.otf);
 }
 
 html{
@@ -14,13 +14,13 @@ html{
     background-color: #FDFFFC;
     font-size: 14px;
     width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Titre + nav */
+        /* Titre + nav */
 h1{
     text-align: center;
     font-size: 2em;
-    font-family: Fiesta;
     color: #FFAD05;
 }
 
@@ -54,7 +54,6 @@ nav .menu a
     height: 100px;
     text-decoration: none;
     font-size: 1.2em;
-    font-family: Market, Arial, sans-serif;
     color: #FFAD05;
 }
 
@@ -70,17 +69,18 @@ label
 label, #toggle
 {
     display: none;
+}    
+
+        /* Texte de présentation et image */
+main{
+    font-weight: bold;
 }
 
-main{
-    color: #0F0A0A;
-    font-family: Fiesta;
-}       
-
-#main-pic{
+.main-pic img{
     width: 98vw;
 }
 
+        /* Footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -98,6 +98,10 @@ footer li{
       margin: 10px;
 }
 
+footer img:hover{
+    transform: scale(110%);
+}
+
 footer img{
     width: 20px;
 }
@@ -107,8 +111,8 @@ footer img{
     font-size: 0.7em;
 }
 
-@media all and (max-width: 527px)
-{
+        /* Media queries */
+@media all and (max-width: 527px){
     nav
     {
         height: 60px;
@@ -132,8 +136,7 @@ footer img{
     }
 }
  
-@media all and (max-width: 527px)
-{
+@media all and (max-width: 527px){
     nav
     {
         height: 60px;
@@ -151,7 +154,6 @@ footer img{
     
     nav .menu a {
         width: 50%;
-        font-family: Fiesta;
         font-weight: bolder;
         font-size: 1.5em;
     }
@@ -171,4 +173,24 @@ footer img{
     #toggle:checked + .menu{
         display: flex;
     }
+}
+
+@media all and (min-width: 1250px){
+    h1{
+        font-size: 3em;
+    }
+
+    main{
+        font-weight: bold;
+    }
+    
+    .main-pic{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-pic img{
+        width: 50vw;
+    }
+
 }

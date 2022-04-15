@@ -111,6 +111,37 @@ footer img{
     font-size: 0.7em;
 }
 
+        /* EVENT.HTML */
+.events p{
+font-weight: bold;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event1,event2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 20px 11px 50px -25px rgba(0,0,0,0.83);
+    background-color: #A5402D;
+    width: 70vw;
+}
+
+.event1 img{
+    position: relative;
+    width: 50%;
+    border-radius: 80px ;
+    box-shadow: 20px 11px 50px -25px rgba(0,0,0,0.83);
+}
+.event1 button{
+    background-color: #FFAD05;
+    
+}
         /* Media queries */
 @media all and (max-width: 527px){
     nav

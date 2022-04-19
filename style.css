@@ -181,6 +181,48 @@ font-weight: bold;
     transform: scale(105%);
 }
 
+        /* Contacte.html */
+
+h4{
+    text-align: center;
+}
+
+form label{
+    color: #0F0A0A;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+form{
+    border: solid 2px #FFAD05;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    padding: 5px;
+    margin: 0 0 115px 0;
+}
+
+form input ,textarea{
+    border: solid 2px #FFAD05;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: none;
+  }
+  
+
+.submit{
+    background-color: #FFAD05;
+    padding: 5px;
+}
+
+.submit:hover{
+    transform: scale(102%);
+}
+
         /* Media queries */
 @media all and (max-width: 527px){
     nav
@@ -243,6 +285,10 @@ font-weight: bold;
     #toggle:checked + .menu{
         display: flex;
     }
+
+    .form img{
+        display: none;
+    }
 }
 
 @media all and (min-width: 1250px){
@@ -276,5 +322,21 @@ font-weight: bold;
     .event2 img{
         width: 80%;
         height: 50%;
+    }
+}
+
+@media all and (min-width: 527px){
+    .form{
+        display: flex;
+    }
+
+    form{
+        
+        width: 50vw;
+        height: 100%;
+    }
+
+    .form img{
+        width: 50vw;
     }
 }

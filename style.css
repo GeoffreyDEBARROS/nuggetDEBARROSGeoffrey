@@ -4,17 +4,12 @@
     src: url(font/Vintages.ttf);
 }
 
-@font-face {
-    font-family: Typo, arial, Helvetica, sans-serif;
-    src: url(font/TypoGraphica_demo.otf);
-}
-
 html{
     padding: 0;
     background-color: #FDFFFC;
     font-size: 14px;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
 }
 
         /* Titre + nav */
@@ -24,7 +19,7 @@ h1{
     color: #FFAD05;
 }
 
-.nugget{
+#nugget{
     font-size: 2.7em;
     font-family: Vintages;
 }
